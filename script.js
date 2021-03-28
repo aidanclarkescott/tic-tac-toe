@@ -58,11 +58,8 @@ const gameBoard = (() => {
 
   const reset = () => {
     const blockElements = Array.from(gameBoardContainer.children);
-    blockElements.forEach((element, index) => {
+    blockElements.forEach((element) => {
       element.textContent = "";
-      blockElement.addEventListener("click", (e) => {
-        addElement(index);
-      });
     });
 
     internalBoard = new Array(9).fill("");
